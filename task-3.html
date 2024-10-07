@@ -1,9 +1,10 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task 6</title>
+    <title>Task 3</title>
 
     <link
       rel="stylesheet"
@@ -19,25 +20,20 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/task-6.css" />
+    <link rel="stylesheet" href="./task-3.css" />
   </head>
   <body>
     <p><a href="./index.html">Go back</a></p>
+    <div class="around">
+      <input
+        type="text"
+        class="text-imput"
+        id="name-input"
+        placeholder="Please enter your name"
+      />
 
-    <div id="controls" class="btn-three">
-      <input type="number" class="number-in" min="1" max="100" step="1" />
-      <button type="button" data-create class="btn-create">Create</button>
-      <button type="button" data-destroy class="btn-destroy">Destroy</button>
+      <h1 class="title">Hello, <span id="name-output">Anonymous</span>!</h1>
     </div>
-
-    <div id="boxes" class="wrap">
-      <div class="blok-one"></div>
-      <div class="blok-two"></div>
-      <div class="blok-three"></div>
-      <div class="blok-four"></div>
-      <div class="blok-five"></div>
-    </div>
-
-    <script src="./js/task-6.js" type="module"></script>
+    <script src="./js/task-3.js" type="module"></script>
   </body>
 </html>
