@@ -25,17 +25,19 @@ const images = [
   },
 ];
 
-const gallery = document.querySelector(".gallery");
+const galleryList = document.querySelector(".gallery");
 
-const galleryItems = images.map((image) => {
-  const li = document.createElement("li");
+const fragment = document.createDocumentFragment();
+
+images.forEach(({ url, alt }) => {
+  const listItem = document.createElement("list-imges");
+  listItem.classList.add("list-imges");
   const img = document.createElement("img");
-
-  img.src = image.url;
-  img.alt = image.alt;
-
-  li.appendChild(img);
-  return li;
+  img.src = url;
+  img.alt = alt;
+  img.classList.add("list-imges");
+  listItem.append(img);
+  fragment.append(listItem);
 });
 
-gallery.append(...galleryItems);
+galleryList.append(fragment);
