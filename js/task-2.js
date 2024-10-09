@@ -30,7 +30,7 @@ const galleryList = document.querySelector(".gallery");
 const fragment = document.createDocumentFragment();
 
 images.forEach(({ url, alt }) => {
-  const listItem = document.createElement("list-imges");
+  const listItem = document.createElement("li");
   listItem.classList.add("list-imges");
   const img = document.createElement("img");
   img.src = url;

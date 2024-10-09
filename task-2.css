@@ -25,7 +25,7 @@ ol {
 
 .list-imges {
   width: 360px;
-  height: auto;
+  height: 300px;
   object-fit: cover;
 }
 
